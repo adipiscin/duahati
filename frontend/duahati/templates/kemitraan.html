@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+
+{% block content %}
+<div style="text-align:center;width:80%;margin:auto;margin-bottom:3rem;">
+    <h1>
+        {{ section.title }}
+    </h1>
+</div>
+<div style="display:flex;width:80%;margin:auto;justify-content:space-between;">
+    <img src="{{get_url(path='/lwt.png')}}"style="width:65%"/>
+    <div id="pageform">
+        <h3>
+            Collab With Us
+        </h3>
+        <input class="form-control" placeholder="Nama">
+        <input class="form-control" placeholder="Alamat">
+        <input class="form-control" placeholder="Email">
+        <input class="form-control" placeholder="WhatsApp">
+        <input class="form-control" placeholder="Bidang">
+        <input class="form-control" placeholder="Bentuk Kerja Sama">
+        <button type="button" class="btn btn-danger">
+            Submit
+        </button>
+    </div>
+</div>
+{% endblock content %}

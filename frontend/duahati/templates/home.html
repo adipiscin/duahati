@@ -1,4 +1,13 @@
-    <a href="{{"/"}}" id="logo">
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    {% include "head.html" %}
+</head>
+<body>
+
+    <header>
+            <a href="{{"/"}}" id="logo">
         <!--<h1>
             DUA<br>HATI
         </h1>-->
@@ -50,7 +59,7 @@
         <a class="navlink" href="{{"/kontak"}}">Kontak</a>
         <div class="dropleft show dropdownLogin">
             <button type="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Annisa
+                Login
             </button>
             <div class="dropdown-menu">
                 <form class="px-4 py-3">
@@ -66,7 +75,12 @@
                       Remember me
                     </label>
                   </div>
+                  <!--
                   <button id="submitDropdownForm" class="btn btn-danger" style="font-size:1rem!important;margin-top:0.5rem">Sign in</button>
+                -->
+                  <a class="btn btn-danger" style="font-size:1rem!important;margin-top:0.5rem;color:white!important;" href="{{"/"}}">
+                    Sign in
+                  </a>
                    
                 </form>
                 <div class="dropdown-divider"></div>
@@ -75,3 +89,57 @@
         </div>
     </div>
     
+
+    </header>
+
+    <img src="{{get_url(path='homepage.jpeg')}}" id="heropic"/>
+    <main>
+    <div style="display:flex; align-items:center; justify-content: space-between;">
+        <div style="width:50rem;margin:auto;text-align:justify">
+            <h2>Tentang Kami</h2>
+            <div class="box">
+                <p>Memperkuat ketahanan keluarga melalui pemberdayaan dan pengembangan sumber daya manusia guna penguatan peran keluarga sebagai basis utama pembangunan bangsa dan pengembangan intervensi di masa remaja dan pra-nikah untuk membangun generasi unggul</p>
+            </div>
+        </div>
+        <img src="{{get_url(path='pmk.jpeg')}}" style="width:20rem"/>
+    </div>
+    <div style="display:flex; width:100%;justify-content:space-between;margin-top:5rem">
+        <div style="display:flex;flex-direction: column;justify-content: space-around;">
+            <h4>
+                Bingung sama persiapan menikah?
+            </h4>
+            <h4>
+                Pernikahanmu bermasalah dan ingin memperbaiki hubungan
+            </h4>
+            <h4>
+                Kamu adalah perempuan yang ingin berdaya dan berkarya?
+            </h4>
+        </div>
+        <img src="{{get_url(path='/ew.webp')}}"/>
+        <div style="display:flex;flex-direction: column;justify-content: space-around;">
+            <h4>
+                Kewalahan manajemen keuangan rumah tangga?
+            </h4>
+            <h4>
+                Pengen promil bingung mau konsultasi kemana?
+            </h4>
+            <h4>
+                Butuh konsultasi tentang karakter dan pola asuh anak?
+            </h4>
+        </div>
+    </div>
+    <h1>Ingin mempererat hubungan pernikahan tapi bingung gimana caranya?</h1>
+    <div class="box" style="margin-bottom:3rem">
+        <p>
+            Kami hadir melalui Dua Hati Apps membantu permasalahan anda
+            berkonsultasi dengan para ahli dan memberikan solusi dalam persoalan
+            pranikah, keluarga, program kehamilan, parenting, perencanaan masa
+         depan hingga program-program pemberdayaan perempuan
+        </p>
+    </div>
+    
+    </main>
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+</body>

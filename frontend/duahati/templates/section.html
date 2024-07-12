@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align:center;width:80%;margin:auto;">
+<h1>
+  {{ section.title }}
+</h1>
+{{ section.content | safe }}
+</div>
+
+{% set pages = section.pages %}
+<ul id="pagelist">
+{%for page in pages%}
+  <li style="width:50%;margin:auto;margin-bottom:1rem;display:flex;justify-content:space-between;">
+    <h4>
+        {{page.title}}
+    </h4>
+    <button type="button" class="btn btn-danger">
+        READ MORE
+    </button>
+  </li>
+{%endfor%}
+</ul>
+<br>
+{% endblock content %}

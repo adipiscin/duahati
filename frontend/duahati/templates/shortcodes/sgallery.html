@@ -1,0 +1,9 @@
+<div>
+    {% for asset in section.assets -%}
+      {%- if asset is matching("[.](jpg|png)$") -%}
+        <a href="{{ get_url(path=asset) }}" target="_blank">
+          <img src="{{ get_url(path=asset) }}" style="width:80%;margin:auto;"/>
+        </a>
+      {%- endif %}
+    {%- endfor %}
+</div>
