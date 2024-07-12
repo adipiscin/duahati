@@ -1,0 +1,51 @@
+    <a href="{{"/"}}" id="logo">
+        <!--<h1>
+            DUA<br>HATI
+        </h1>-->
+        <img src="{{get_url(path='/image1.png')}}"/>
+    </a>
+    
+    <div id="navmenu">
+        <!--<button type="button">Konsultasi</button>--><!--make dropdowns in dropdowns-->
+        <div class="dropdown show">
+            <button type="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Konsultasi
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                {%set page = get_page(path="konsultasi/gratis.md")%}
+                <a class="dropdown-item" href="{{ page.permalink }}">Gratis</a>
+                {%set page = get_page(path="konsultasi/pranikah.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Pra Nikah</a>
+                <h6 class="dropdown-header">Pasca Nikah</h6>
+                {%set page = get_page(path="konsultasi/kharmoni.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Keluarga Harmoni</a>
+                {%set page = get_page(path="konsultasi/keuangan.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Keuangan</a>
+                {%set page = get_page(path="konsultasi/phamil.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Program Hamil</a>
+                {%set page = get_page(path="konsultasi/parenting.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Parenting</a>
+                {%set page = get_page(path="konsultasi/pmdepan.md")%}
+                <a class="dropdown-item" href="{{page.permalink}}">Perencanaan Masa Depan</a>
+            </div>
+        </div>
+        <div class="dropdown show">
+            <button type="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Edukasi
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <h6 class="dropdown-header">Pra Nikah</h6>
+                <a class="dropdown-item" href="#">Kelas Berbayar</a>
+                <a class="dropdown-item" href="#">Artikel</a>
+                <h6 class="dropdown-header">Pasca Nikah</h6>
+                <a class="dropdown-item" href="#">Kelas Berbayar
+                <a class="dropdown-item" href="#">Artikel</a>
+            </div>
+        </div>
+        <button type="button">Event</button>
+        <button type="button">Membership</button>
+        <button type="button">Kemitraan</button>
+        <button type="button">Kontak</button>
+        <button type="button">Login</button>
+    </div>
+    

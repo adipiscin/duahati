@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align:center;width:80%;margin:auto;">
+<h1>
+  {{ page.title }}
+</h1>
+{{ page.content | safe }}
+</div>
+<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <!-- Indicators 
+  <ul class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+  </ul>
+   -->
+
+  <!-- The slideshow -->
+<div style="background:#eb8dba;padding-top:3rem;padding-bottom:3rem;display:flex;justify-content:center;flex-direction:column;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div style="width:100%;"    >
+        <div class="cardgroup">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Arka Kusuma</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Tangerang. Memiliki 12 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Bayu Pramana</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Jakarta. Memiliki 10 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>        
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Cahaya Mawar</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Bogor. Memiliki 9 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cardgroup">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Sari Zakaria</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Bandung. Memiliki 15 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Mahmud Ibrahim</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Yogyakarta. Memiliki 17 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>        
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/800" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Hidayat Abdul</h5>
+            <p class="card-text" style="font-family: 'Bodoni Moda', serif !important;">Berdasar di Makkasar. Memiliki 10 tahun pengalaman.</p>
+            <a href="#" class="btn btn-danger">Pilih</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-danger" style="margin:auto;margin-top:3rem">
+    Lihat Jadwal
+  </button>
+</div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+{% endblock content %}

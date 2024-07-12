@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    {% include "head.html" %}
+</head>
+<body>
+    <header>
+        {% include "header.html" %}
+    </header>
+        {% block content %} {% endblock %}
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+</body>

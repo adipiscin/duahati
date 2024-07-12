@@ -1,0 +1,85 @@
+/**{
+    font-family: ;
+}*/
+$card-height: 100%;
+
+body{
+    width:100%;
+    background: #E0E3E7;
+    font-family: "Bodoni Moda", serif !important;
+    margin-bottom: none;
+} 
+header{
+    width:98%;
+    display: flex!important;
+    justify-content: space-between;
+    background: transparent;
+    height: 15vh;
+}
+#logo{ 
+
+    text-align: center;
+    h1{
+        margin-top:2rem;
+        color: white;
+    }
+    img{
+        width:20rem;
+    }
+}
+#navmenu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button{
+        margin-right: 3rem;
+    }
+}
+button{
+    background-color: transparent;
+    font-size:1.5rem!important;
+    border: none;
+    transition-duration: 0.2s;
+    &:hover {
+        color:#3D315B;
+    }
+}
+#heropic{
+    width:100%;
+    height: 85vh;
+    object-fit: cover;
+    filter: contrast(130%);
+    mask-image: linear-gradient(rgb(0 0 0 / 100%), rgb(0 0 0 / 100%)75%, transparent);
+}
+p{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+main{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    div{
+        margin-bottom: 2rem;
+    }
+}
+.box{
+    margin:auto; 
+    background: #DDD8C4;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top:1rem;
+    padding-bottom:0.3rem;
+}
+.cardgroup{
+    display:flex;
+    justify-content: space-around;
+    width: 80%;
+    margin:auto;
+}
+meter{
+    background: #eb8dba;
+}
+.btn-danger{
+    background-color: #A63D40!important;
+}
